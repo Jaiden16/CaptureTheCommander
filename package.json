@@ -1,0 +1,22 @@
+{
+  "name": "CaptureTheCommander",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "cd backed && npm start",
+    "heroku-prebuild": "cd backend && npm install"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SavitaMadray/CaptureTheCommander.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/SavitaMadray/CaptureTheCommander/issues"
+  },
+  "homepage": "https://github.com/SavitaMadray/CaptureTheCommander#readme"
+}

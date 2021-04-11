@@ -36,9 +36,9 @@
 }
 
 .button {
-  color: blue;
+  color: white;
   font-family: "Fontdiner Swanky", cursive;
-  background-color: rgba(230, 230, 240, 0.064);
+  background-color: rgba(0, 0, 0, 1);
   height: 25px;
   border-radius: 10px;
 }

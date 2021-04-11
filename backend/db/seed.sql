@@ -1,7 +1,7 @@
-DROP DATABASE IF EXISTS capturecommander_db;
-CREATE DATABASE capturecommander_db;
+-- DROP DATABASE IF EXISTS capturecommander_db;
+-- CREATE DATABASE capturecommander_db;
 
-\c capturecommander_db;
+-- \c capturecommander_db;
 
 CREATE TABLE users
 (
