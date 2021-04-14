@@ -1,7 +1,7 @@
 import React from "react";
 
 function Card(props) {
-  const { card, id, clicked, hand, gameMoves } = props;
+  const { card, id, hand, gameMoves } = props;
 
   let hiddenCard = "";
   if (card.hidden) {
@@ -19,7 +19,7 @@ function Card(props) {
             gameMoves(e,id,hand);
           }
         }}
-        className={"card" + " " + hiddenCard}
+        className={"card " + hiddenCard}
         data-hand={hand}
         data-numval={card.numVal}
       />
@@ -36,7 +36,7 @@ function Card(props) {
             // gameMoves(e);
           }
         }}
-        className={"card" + " " + hiddenCard}
+        className={"card " + hiddenCard}
         data-hand={hand}
         data-numval={card.numVal}
       />

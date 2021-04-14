@@ -5,7 +5,7 @@ import { dealHands } from "../scripts/CardDeck";
 import axios from "axios";
 import {getApi} from "../util/util"
 
-const API = getApi();
+// const API = getApi();
 
 class CardGame extends Component {
   constructor() {

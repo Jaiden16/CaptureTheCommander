@@ -13,7 +13,7 @@ class matches extends Component {
   }
 
   componentDidMount() {
-    let { history } = this.state;
+    // let { history } = this.state;
     axios.get(`${API}/matches`).then((res) => {
       console.log(res);
       let matches = res.data.payload;

@@ -3,7 +3,7 @@ import "../Css/gameboard.css";
 import Card from "./card";
 
 export default function GameBoard(props) {
-  const { player1hand, flipCard, player2hand, message, gameMoves,name1, name2 } = props;
+  const { player1hand, player2hand, message, gameMoves,name1, name2 } = props;
 
   let firstRowP1 = player1hand.slice(0, 4); //0,1,2,3
   let secondRowP1 = player1hand.slice(4, 7);
