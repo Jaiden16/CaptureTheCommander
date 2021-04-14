@@ -3,6 +3,7 @@ import { Switch, Route } from "react-router-dom";
 import LoginForm from "../Component/LoginForm";
 import SignUpForm from "../Component/SignUpForm";
 import axios from "axios";
+import {getApi} from "../util/util"
 
 class AuthContainer extends Component {
   state = {

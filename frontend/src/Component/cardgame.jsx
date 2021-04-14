@@ -3,6 +3,9 @@ import "../Css/cardgame.css";
 import GameBoard from "./GameBoard";
 import { dealHands } from "../scripts/CardDeck";
 import axios from "axios";
+import {getApi} from "../util/util"
+
+const API = getApi();
 
 class CardGame extends Component {
   constructor() {
@@ -384,7 +387,7 @@ class CardGame extends Component {
     if (isCommanderOneHidden || isCommanderTwoHidden) {
 
       axios
-        .post("matches/all", {
+        .post(`${getApi}/matches/all`, {
           player1: player1Name,
           player2: player2Name,
           whoWon: winningPlayer,

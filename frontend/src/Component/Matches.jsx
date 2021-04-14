@@ -1,7 +1,9 @@
 import React, { Component } from "react";
 import axios from "axios";
-import match from "../Css/matches.css";
+// import match from "../Css/matches.css";
+import {getApi} from "../util/util"
 
+const API = getApi()
 class matches extends Component {
   constructor() {
     super();
@@ -12,7 +14,7 @@ class matches extends Component {
 
   componentDidMount() {
     let { history } = this.state;
-    axios.get("/matches").then((res) => {
+    axios.get(`${API}/matches`).then((res) => {
       console.log(res);
       let matches = res.data.payload;
       console.log(matches);

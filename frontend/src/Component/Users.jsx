@@ -1,5 +1,7 @@
 import React, { Component } from "react";
 import axios from "axios";
+import {getApi} from "../util/util"
+const API = getApi()
 
 class Users extends Component {
   constructor() {
@@ -11,7 +13,7 @@ class Users extends Component {
 
   async componentDidMount() {
     try {
-      let { data } = await axios.get("/users");
+      let { data } = await axios.get(`${API}/users`);
       this.setState({
         users: data.payload,
       });
