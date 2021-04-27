@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import axios from "axios";
-import match from "../Css/matches.css";
+import "../Css/matches.css";
 import {getApi} from "../util/util"
 
 const API = getApi()
